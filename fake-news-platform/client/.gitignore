@@ -1,7 +1,4 @@
-    /node_modules
-    /dist
-    /build
-    /coverage   
-
-    .env
-    .DS_Store
+node_modules/
+.env
+.env.local
+.env.example
