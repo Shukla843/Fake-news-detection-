@@ -6,4 +6,4 @@
     .DS_Store
     .env.local
     .env.example
-    .env.development.local
+    
