@@ -8,7 +8,7 @@ export default defineConfig({
     // This avoids CORS issues when running locally
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://fake-news-detection-hpoh.onrender.com",
         changeOrigin: true,
       },
     },

@@ -9,7 +9,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "/api", // Vite proxy forwards this to http://localhost:5000/api
+  baseURL: import.meta.env.DEV ? "/api" : import.meta.env.VITE_API_URL, // Use proxy in dev, full URL in production
   withCredentials: true, // IMPORTANT: sends JWT cookie with every request
 });
 
