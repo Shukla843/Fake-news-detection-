@@ -39,7 +39,7 @@ const DashboardPage = () => {
 
   const fetchHistory = async () => {
     try {
-      const res = await axiosInstance.get("/news/history");
+      const res = await axiosInstance.get("/api/news/history");
       setHistory(res.data.newsHistory);
       setStats(res.data.stats);
     } catch (err) {

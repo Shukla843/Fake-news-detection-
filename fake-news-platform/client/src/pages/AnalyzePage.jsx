@@ -70,7 +70,7 @@ const AnalyzePage = () => {
     setResult(null); // Clear previous result
 
     try {
-      const res = await axiosInstance.post("/news/analyze", { inputText });
+      const res = await axiosInstance.post("/api/news/analyze", { inputText });
       setResult(res.data.result);
       toast.success("Analysis complete!");
     } catch (err) {
