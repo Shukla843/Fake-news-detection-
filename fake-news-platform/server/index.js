@@ -24,7 +24,7 @@ connectDB();
 // ── Middleware ──────────────────────────────
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173", // Allow frontend
+    origin: process.env.CLIENT_URL || "https://fake-news-detection-teal-two.vercel.app/", // Allow frontend
     credentials: true, // Allow cookies to be sent
   })
 );
