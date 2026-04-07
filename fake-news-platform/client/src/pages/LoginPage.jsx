@@ -39,7 +39,7 @@ const LoginPage = () => {
 
     setIsLoading(true);
     try {
-      const res = await axiosInstance.post("/auth/login", formData);
+      const res = await axiosInstance.post("/api/auth/login", formData);
       login(res.data.user); // Store user in context
       toast.success(`Welcome back, ${res.data.user.name}!`);
       navigate("/dashboard");
